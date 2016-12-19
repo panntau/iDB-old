@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^blog\.idevband\.com [NC]
+RewriteCond %{REQUEST_URI} !^/blog/
+RewriteRule ^(.*)$ /blog/$1 [L,QSA]
+
+RewriteCond %{HTTP_HOST} ^mybooks\.idevband\.com [NC]
+RewriteCond %{REQUEST_URI} !^/mybooks/
+RewriteRule ^(.*)$ /mybooks/$1 [L,QSA]
+
+RewriteCond %{HTTP_HOST} ^aroundyou\.idevband\.com [NC]
+RewriteCond %{REQUEST_URI} !^/aroundyou/
+RewriteRule ^(.*)$ /aroundyou/$1 [L,QSA]
