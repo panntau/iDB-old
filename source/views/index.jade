@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    title И.48 Valtberg
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    //link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
+    link(rel="stylesheet", href="assets/css/main.css")
+    include favicon.html
+  body
+      .l-container
+        header.l-header
+          .l-pageTitle
+            .c-pageTitle
+              h1.c-pageTitle__h И.48 <span>Valtberg
+              img.c-pageTitle__logo(src="assets/img/N.48_VALTBERG.png")
+        main.l-pageHome
+          .c-pageHome
+            img(src="assets/img/kresba.png")
+        footer.l-footer
+          .c-footer
+            .c-footer__contacts
+              ul.c-contacts.c-contacts_inline
+                li.c-address
+                  address
+                    span.c-address__item.c-address__street Kopečná 48
+                    span.c-address__item.c-address__region Jižní morava
+                    span.c-address__item.c-address__country Česká republika
+                li.c-email
+                  a.c-link.c-link_plain(href="mail-to:info@valtberg.cz") info@valtberg.cz
+            .c-footer__comingSoon
+              h2.c-footer__comingSoon_title.c-comingSoon Coming Soon
+              a.c-footer__comingSoon_facebook.button_facebook(href="https://www.facebook.com/valtberg/")
+                include facebook-logo-svg.html
+                span.hidden Náš facebook
+    //script(src="./assets/js/app.js")

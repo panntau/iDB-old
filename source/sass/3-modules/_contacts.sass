@@ -1,0 +1,35 @@
+address
+  font-style: normal
+.c-contacts
+  padding: 0
+  &_inline
+    display: inline-block
+    margin-bottom: 30px
+
+.c-address,.c-email
+  display: block
+  @media (min-width: 480px)
+    display: inline-block
+.c-address
+  &__item
+    display: block
+    @media (min-width: 480px)
+      display: inline-block
+      &+&:before
+        display: inline-block
+        @include size(5px)
+        @include border-radius(50%)
+        content: ''
+        background: $text-color
+        margin: 0 1ex
+.c-email
+  margin-top: 20px
+  @media (min-width: 480px)
+    margin-top: 0
+    &:before
+      display: inline-block
+      @include size(5px)
+      @include border-radius(50%)
+      content: ''
+      background: $text-color
+      margin: 0 1ex

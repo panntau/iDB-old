@@ -1,0 +1,10 @@
+.c-footer
+  border-top: 1px solid $black
+  &__comingSoon
+    @media (min-width: 480px)
+      @include display(flex)
+      @include justify-content(center)
+      @include align-items(flex-start)
+    &_title,&_facebook
+      @media (min-width: 480px)
+        margin-top: 30px

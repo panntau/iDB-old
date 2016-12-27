@@ -414,7 +414,7 @@ a:hover {
    Welcome Section
    ========================================================================== */
 .welcome-section {
-  background-image: url('../assets/hero2.jpg');
+  background-image: url('../assets/hero3.jpg');
   background-attachment: scroll;
   height: auto;
   width: 100%;
@@ -1218,7 +1218,7 @@ a:hover {
    Services Section
    ========================================================================== */
 .services-section {
-  background-image: url('../assets/hero2.jpg');
+  background-image: url('../assets/hero3.jpg');
   background-attachment: scroll;
   width: 100%;
   min-width: 100%;
@@ -1835,6 +1835,9 @@ a:hover {
   height: auto;
   background: none;
 }
+.result div{
+  margin-bottom: 10px;
+}
 #result span {
   display: block;
 }
@@ -1863,7 +1866,7 @@ a:hover {
   min-width: 100%;
   text-align: center;
   padding: 60px 0;
-  background-image: url(../assets/hero2.jpg);
+  background-image: url(../assets/hero3.jpg);
   position: relative;
   z-index: 0;
 }
