@@ -11,6 +11,7 @@ var $ = require('gulp-load-plugins')({
 var browsersync = require('browser-sync');
 var del = require('del');
 var config = require('./config.js')();
+var lessToScss = require('gulp-less-to-scss');
 
 // Configs
 var
@@ -226,6 +227,13 @@ gulp.task('watch', ['browsersync'], function() {
 
 // Compile and Watch task
 gulp.task('start', ['build', 'watch']);
+
+gulp.task('less2scss',function(){
+    gulp.src('css/*.less')
+        .pipe(lessToScss())
+        .pipe(gulp.dest('source/scss'));
+});
+
 
 // Help Task
 gulp.task('help', function() {

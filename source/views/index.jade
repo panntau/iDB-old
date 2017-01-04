@@ -3,45 +3,19 @@ html(lang="en")
   head
     title iDevBand
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale:1, user-scalable:no")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
     link(rel="stylesheet", href="assets/css/main.css")
-    //include favicon.html
+    include favicon.html
   body(data-spy="scroll", data-target="#my-nav")
     include _navbar.html
     include _welcome.html
-    section#portfolio.l-portfolio-section.light-section.dark-content
-      .c-portfolio__section
-        .c-portfolio__item
-          figure.c-portfolio__thumb
-            img(src="assets/img/zuno_3.jpeg").c-portfolio__img
-            span.shadow.cover
-        .c-portfolio__item
-          figure.c-portfolio__thumb
-            img(src="assets/img/zuno_7.jpeg").c-portfolio__img
-            span.shadow.cover
-        .c-portfolio__item
-          figure.c-portfolio__thumb
-            img(src="assets/img/eats_1.jpeg").c-portfolio__img
-            span.shadow.cover
-        .c-portfolio__item
-          img(src="assets/img/eats_2.jpeg").c-portfolio__img
-          span.shadow.cover
-        .c-portfolio__item
-          img(src="assets/img/eats_3.jpeg").c-portfolio__img
-          span.shadow.cover
-        .c-portfolio__item
-          img(src="assets/img/eats_4.jpeg").c-portfolio__img
-          span.shadow.cover
-        .c-portfolio__item
-          img(src="assets/img/mybooks_1.jpg").c-portfolio__img
-          span.shadow.cover
-        .c-portfolio__item
-          img(src="assets/img/mybooks_2.jpg").c-portfolio__img
-          span.shadow.cover
+    include _portfolio
+    //include _portfolioCards.html
     include _services.html
     include _contact.html
     include _footer.html
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
     script(src="./assets/js/app.js")
+    include _scripts.html
